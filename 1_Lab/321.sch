@@ -1,0 +1,332 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Microchip_ATmega:ATmega328PB-AU D2
+U 1 1 6079A697
+P 3000 2700
+F 0 "D2" H 3000 1111 50  0000 C CNN
+F 1 "ATmega328PB-AU" H 3000 1020 50  0000 C CNN
+F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 3000 2700 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/40001906C.pdf" H 3000 2700 50  0001 C CNN
+	1    3000 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D3
+U 1 1 607A2FF4
+P 4550 1600
+F 0 "D3" H 4550 1835 50  0000 C CNN
+F 1 "Красный" H 4550 1744 50  0001 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" V 4550 1600 50  0001 C CNN
+F 3 "~" V 4550 1600 50  0001 C CNN
+	1    4550 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small D4
+U 1 1 607A571B
+P 5400 1600
+F 0 "D4" H 5400 1485 50  0000 C CNN
+F 1 "желтый" H 5400 1484 50  0001 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" V 5400 1600 50  0001 C CNN
+F 3 "~" V 5400 1600 50  0001 C CNN
+	1    5400 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:LED_Small LED1
+U 1 1 607A5C28
+P 3850 4300
+F 0 "LED1" H 3850 4535 50  0000 C CNN
+F 1 "LED_Small" H 3850 4444 50  0000 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" V 3850 4300 50  0001 C CNN
+F 3 "~" V 3850 4300 50  0001 C CNN
+	1    3850 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED_Small D5
+U 1 1 607A70C6
+P 6350 1600
+F 0 "D5" H 6350 1485 50  0000 C CNN
+F 1 "зеленый" H 6350 1484 50  0001 C CNN
+F 2 "Diode_SMD:D_1206_3216Metric" V 6350 1600 50  0001 C CNN
+F 3 "~" V 6350 1600 50  0001 C CNN
+	1    6350 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 607ABAE9
+P 6250 4450
+F 0 "#PWR0101" H 6250 4200 50  0001 C CNN
+F 1 "GND" H 6255 4277 50  0000 C CNN
+F 2 "" H 6250 4450 50  0001 C CNN
+F 3 "" H 6250 4450 50  0001 C CNN
+	1    6250 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 607AD9A3
+P 1500 4250
+F 0 "#PWR0102" H 1500 4000 50  0001 C CNN
+F 1 "GND" H 1505 4077 50  0000 C CNN
+F 2 "" H 1500 4250 50  0001 C CNN
+F 3 "" H 1500 4250 50  0001 C CNN
+	1    1500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Display_Character:SA39-12SRWA D1
+U 1 1 607C12C6
+P 5450 3150
+F 0 "D1" H 5450 3817 50  0000 C CNN
+F 1 "SA39-12SRWA" H 5450 3726 50  0000 C CNN
+F 2 "Display_7Segment:Sx39-1xxxxx" H 5450 2600 50  0001 C CNN
+F 3 "http://www.kingbrightusa.com/images/catalog/SPEC/sa39-12srwa.pdf" H 5450 3150 50  0001 C CNN
+	1    5450 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push S2
+U 1 1 607D81BA
+P 4550 4250
+F 0 "S2" H 4550 4535 50  0000 C CNN
+F 1 "SW_Push" H 4550 4444 50  0000 C CNN
+F 2 "Button_Switch_SMD:Nidec_Copal_SH-7010A" H 4550 4450 50  0001 C CNN
+F 3 "~" H 4550 4450 50  0001 C CNN
+	1    4550 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push S3
+U 1 1 607D8D5B
+P 5400 4300
+F 0 "S3" H 5400 4585 50  0000 C CNN
+F 1 "SW_Push" H 5400 4494 50  0000 C CNN
+F 2 "Button_Switch_SMD:Nidec_Copal_SH-7010A" H 5400 4500 50  0001 C CNN
+F 3 "~" H 5400 4500 50  0001 C CNN
+	1    5400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2600 4450 2600
+Wire Wire Line
+	4450 2600 4450 1600
+Wire Wire Line
+	3600 2400 6250 2400
+Wire Wire Line
+	6250 2400 6250 1600
+Wire Wire Line
+	3600 2500 5300 2500
+Wire Wire Line
+	5300 2500 5300 1600
+Wire Wire Line
+	1500 4250 2200 4250
+Wire Wire Line
+	3000 4250 3000 4200
+Wire Wire Line
+	3600 1700 4350 1700
+Wire Wire Line
+	4350 1700 4350 4250
+Wire Wire Line
+	3600 1800 5200 1800
+Wire Wire Line
+	5200 1800 5200 4300
+Wire Wire Line
+	3600 1500 4150 1500
+Wire Wire Line
+	4150 1500 4150 3050
+Wire Wire Line
+	4150 3050 5150 3050
+Wire Wire Line
+	3600 3900 4300 3900
+Wire Wire Line
+	4300 3900 4300 3150
+Wire Wire Line
+	4300 3150 5150 3150
+Wire Wire Line
+	3600 3800 4150 3800
+Wire Wire Line
+	4150 3800 4150 3250
+Wire Wire Line
+	3600 3500 4000 3500
+Wire Wire Line
+	4000 3500 4000 2850
+Wire Wire Line
+	4000 2850 5150 2850
+Wire Wire Line
+	4150 3250 5150 3250
+Wire Wire Line
+	3600 3400 4100 3400
+Wire Wire Line
+	4100 3400 4100 2950
+Wire Wire Line
+	4100 2950 5150 2950
+Wire Wire Line
+	5150 3350 4650 3350
+Wire Wire Line
+	4650 3350 4650 3600
+Wire Wire Line
+	4650 3600 3600 3600
+Wire Wire Line
+	3600 3700 4750 3700
+Wire Wire Line
+	4750 3700 4750 3450
+Wire Wire Line
+	4750 3450 5150 3450
+Wire Wire Line
+	4750 4250 4900 4250
+Wire Wire Line
+	4900 4250 4900 4500
+Wire Wire Line
+	4900 4600 5850 4600
+Wire Wire Line
+	5850 4600 5850 4450
+Wire Wire Line
+	5850 4450 6250 4450
+Wire Wire Line
+	3750 4300 3500 4300
+Wire Wire Line
+	3500 4300 3500 4500
+Wire Wire Line
+	3500 4500 4900 4500
+Connection ~ 4900 4500
+Wire Wire Line
+	4900 4500 4900 4600
+Wire Wire Line
+	3950 4300 3950 2000
+Wire Wire Line
+	3600 2000 3950 2000
+Wire Wire Line
+	6250 4450 6650 4450
+Wire Wire Line
+	6650 1600 6450 1600
+Connection ~ 6250 4450
+Wire Wire Line
+	4650 1600 4900 1600
+Wire Wire Line
+	4900 1600 4900 1750
+Wire Wire Line
+	4900 1750 5800 1750
+Connection ~ 6650 1750
+Wire Wire Line
+	6650 1750 6650 1600
+Wire Wire Line
+	5500 1600 5800 1600
+Wire Wire Line
+	5800 1600 5800 1750
+Connection ~ 5800 1750
+Wire Wire Line
+	5800 1750 6650 1750
+Wire Wire Line
+	5900 1950 4250 1950
+Wire Wire Line
+	4250 1950 4250 1600
+Wire Wire Line
+	4250 1600 3600 1600
+Wire Wire Line
+	6000 1950 6650 1950
+Connection ~ 6650 1950
+Wire Wire Line
+	6650 1950 6650 1750
+Wire Wire Line
+	5750 3450 6650 3450
+Connection ~ 6650 3450
+Wire Wire Line
+	6650 3450 6650 1950
+Wire Wire Line
+	5750 3550 6650 3550
+Wire Wire Line
+	6650 3450 6650 3550
+Connection ~ 6650 3550
+Wire Wire Line
+	5600 4300 6650 4300
+Wire Wire Line
+	6650 3550 6650 4300
+Connection ~ 6650 4300
+Wire Wire Line
+	6650 4300 6650 4450
+$Comp
+L Device:Speaker S4
+U 1 1 607C2447
+P 6000 2150
+F 0 "S4" V 5917 2330 50  0000 L CNN
+F 1 "SP1" V 6008 2330 50  0000 L CNN
+F 2 "Button_Switch_SMD:Nidec_Copal_SH-7010A" H 6000 1950 50  0001 C CNN
+F 3 "~" H 5990 2100 50  0001 C CNN
+	1    6000 2150
+	0    1    1    0   
+$EndComp
+NoConn ~ 2400 1500
+NoConn ~ 2400 3200
+NoConn ~ 2400 3300
+NoConn ~ 2400 3400
+NoConn ~ 2400 3500
+NoConn ~ 3600 2100
+NoConn ~ 3600 2200
+NoConn ~ 3600 2700
+NoConn ~ 3600 2800
+NoConn ~ 3600 2900
+NoConn ~ 3600 3200
+NoConn ~ 3600 3300
+NoConn ~ 5150 3550
+NoConn ~ 3000 1200
+NoConn ~ 3100 1200
+NoConn ~ 3600 1900
+$Comp
+L power:+5V #PWR0103
+U 1 1 607AE196
+P 1650 1500
+F 0 "#PWR0103" H 1650 1350 50  0001 C CNN
+F 1 "+5V" H 1665 1673 50  0000 C CNN
+F 2 "" H 1650 1500 50  0001 C CNN
+F 3 "" H 1650 1500 50  0001 C CNN
+	1    1650 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 607D99CB
+P 1650 1650
+F 0 "#FLG0101" H 1650 1725 50  0001 C CNN
+F 1 "PWR_FLAG" V 1650 1778 50  0000 L CNN
+F 2 "" H 1650 1650 50  0001 C CNN
+F 3 "~" H 1650 1650 50  0001 C CNN
+	1    1650 1650
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1650 1650 1650 1500
+NoConn ~ 3600 3000
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 607E3C25
+P 2200 4100
+F 0 "#FLG0102" H 2200 4175 50  0001 C CNN
+F 1 "PWR_FLAG" H 2200 4273 50  0000 C CNN
+F 2 "" H 2200 4100 50  0001 C CNN
+F 3 "~" H 2200 4100 50  0001 C CNN
+	1    2200 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 4100 2200 4250
+Connection ~ 2200 4250
+Wire Wire Line
+	2200 4250 3000 4250
+$EndSCHEMATC
